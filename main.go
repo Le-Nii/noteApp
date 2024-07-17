@@ -50,7 +50,10 @@ func main() {
 		return
 	}
 
-	outputData(userNote)
+	err = outputData(userNote)
+	if err != nil {
+		return
+	}
 
 }
 
